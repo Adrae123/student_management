@@ -1,0 +1,13 @@
+com\projet\model\Course.class
+com\projet\dao\JdbcEnrollmentDao.class
+com\projet\dao\JdbcStudentDao.class
+com\projet\app\Main.class
+com\projet\model\Student.class
+com\projet\service\UniversityService.class
+com\projet\dao\DBConnection.class
+com\projet\dao\EnrollmentDao.class
+com\projet\dao\StudentDao.class
+com\projet\model\Enrollment.class
+com\projet\App.class
+com\projet\dao\JdbcCourseDao.class
+com\projet\dao\CourseDao.class
