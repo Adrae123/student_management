@@ -18,16 +18,38 @@ Créer une base de données nommée :
 CREATE DATABASE gestion_etudiants;
 USE gestion_etudiants;
 
+
+
+Créer la table des étudiants :
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);
+Créer la table des cours :
+
+CREATE TABLE courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100)
+);
+Créer la table d'inscription :
+
+CREATE TABLE enrollment (
+    student_id INT,
+    course_id INT
+);
+//Configuration
+
+Vérifier les informations de connexion dans la classe DBConnection :
+
 private static final String URL = "jdbc:mysql://localhost:3306/gestion_etudiants";
 private static final String USER = "root";
 private static final String PASSWORD = "";
-
-
 //lancer le projet 
 mvn clean compile exec:java
   
-
-  Fonctionnalités principales
+//Fonctionnalités principales
 
 Ajouter un étudiant
 
